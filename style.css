@@ -1,0 +1,496 @@
+button {
+	border-radius: 1em;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	display: flex;
+	/*width: 100%;*/
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+
+.HTML-Button {
+	border-radius: 0em;
+	height: 5vh;
+	width: 15vw;
+	z-index:0;
+}
+
+.bottom-section {
+	display: flex;
+	/*#flex-grow: 1;
+	#padding: 10px 0;*/
+	justify-content: space-around;
+	background-color: white;
+    border-top: 2px solid #ccc;
+	position: fixed; 
+	bottom: 0; 
+	left: 0;
+	width: 100%; 
+	height: 10%;
+}
+
+.tab-button {
+    position: relative;
+
+    margin: 0 5px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+	width:20%;
+}
+
+.tab-button.active {
+    color: green;
+}
+
+.tab-button:hover {
+    /*Removed as this causes an issue when viewing from mobile: it stays grey after clicking
+	background-color: #f0f0f0;*/
+}
+
+.notification {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.Tab-Thing {
+    #--ni-border: var(--ni-border-stroke) var(--ni-border-style) var(--ni-border-color) !important;
+	
+	/*  	display: flex;
+	#https://codepen.io/snhasani/pen/PqMdOM
+	#flex-grow: 1;
+	justify-content: space-around;
+	background-color: white;
+   	#padding: 10px 0;
+    border-top: 2px solid #ccc;
+	#position: fixed; 
+	#bottom: 0; 
+	#left: 0;
+	width: 100vw; 
+	height: 70vh; */
+}
+
+.Main-Tab{
+	width:100%;
+	display: flex;
+	justify-content:space-around;
+	position:fixed;
+	left:10%;
+	right:10%
+}
+
+.ni-front-panel-wrapper{
+
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	position: fixed; 
+	bottom: 0%; 
+	top: 0%;
+	width: 100%; 
+
+}
+
+.tabcontent { 
+	/*width: 100%;
+	height: 80vh; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	position: fixed; 
+	left: 0%; 
+	right: 0%;
+	top:10%;
+	bottom:10%;
+	justify-content:space-evenly;
+	*/
+	width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 10%;
+    bottom: 12%;
+	margin-bottom: 10px;
+	margin-bottom:10px;
+    justify-content: space-between;
+
+}
+
+.tablinks {
+	display: none;
+}
+
+.indicator {
+
+	
+	/*border-radius: 15px;
+	width: 90%; 
+	height: 12%;
+	margin: 0% auto 0% auto; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	border: 1px solid #ccc; 
+	padding: 2%;*/
+
+	border-radius: 15px;
+    width: 90%;
+    height: 9vh;
+    margin: 2% auto 2% auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2%;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.double-indicator {
+	height:20%;
+}
+html {
+    --color: #999;
+    --checked-color: green;
+
+    --bg-color: white;
+
+    font-family: Arial;
+    font-size: 16px;
+}
+
+
+input[type="radio"] {
+    height: 0.9em;
+    width: 0.9em;
+    margin-right: 0.5em;
+	/* For a circular appearance we need a border-radius. */
+	border-radius: 50%;
+
+	/* The background will be the radio dot's color. */
+	background: #FFF;
+
+	/* The border will be the spacing between the dot and the outer circle */
+	border: 1px solid #FFF;
+
+	/* And by creating a box-shadow with no offset and no blur, we have an outer circle */
+	box-shadow: 0 0 0 0.13em green;
+}
+
+
+
+.custom-radio {
+    /* hiding browser el */
+    appearance: none;
+    /* Safari support */
+    -webkit-appearance: none;
+    border: 0.1em solid black;
+
+
+}
+
+.custom-radio:checked {
+
+    background-color: green;
+
+}
+
+
+
+.grey-indicator {
+	background-color: #e6e6e6;
+}
+.green-indicator {
+	background-color: #cef2d4;
+}
+
+.user-title {
+	font-size: 150%;
+	color: #333;
+	padding: 10px 0px;
+}
+.string-indicator {
+	font-size: 120%;
+	color: #333;
+	padding: 5px 0px;
+}
+/*
+.user-title {
+	font-size: 23px;
+	color: #333;
+	padding: 10px 0px;
+}
+.string-indicator {
+	font-size: 18px;
+	color: #333;
+	padding: 5px 0px;
+}*/
+
+.full-graph{
+    width:90%;
+	height:84%;
+	bottom:20%;
+	border-radius: 15px;
+	margin: 10px auto 10px auto; 
+	
+}
+
+.graph {
+	width: 33%;
+	height: 80%;
+	border-left: 2px solid #333;
+	border-bottom: 2px solid #333;
+	border-radius: 0 0 10 px 0;
+}
+
+
+
+/* Beginning of Dropdown List styling */
+
+/* The container must be positioned relative: */
+.custom-select {
+	position: relative;
+	font-family: Arial;
+	height:100%;
+	width:70%;
+
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+	background-color: #e6e6e6;
+	border-radius: 15px;
+	font-size: 2em;
+	align-content: center;
+	z-index:0;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 45%;
+	right: 10px;
+	width: 0;
+	height: 0px;
+	border: 1em solid transparent;
+	border-color: green transparent transparent transparent;
+
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent transparent transparent;
+}
+
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+	color: black;
+	padding: 2.5vh 16px;
+	border: 1px solid transparent;
+	border-color: rgba(0, 0, 0, 0.1) transparent transparent  transparent;
+	cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+	/*position: absolute;
+	background-color: #e6e6e600;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 98;
+	border-radius: 15px;
+	height:100%;*/
+	font-size:2em;
+	background-color: #e6e6e6;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	border-radius: 15px;
+	display:flex;
+	flex-direction:column;
+	position:relative;
+
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+	/*background-color: rgba(0, 0, 0, 0.1);*/
+}
+
+.Graph_Top{
+	justify-content: space-between;
+	width:90%;
+	height:7%;
+	display:flex;
+	margin: 10px auto 10px auto;
+}
+
+/* End of Dropdown List styling */
+
+.header { 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	padding: 10px; 
+	background-color: white; 
+	
+	position: fixed; 
+	top: 0; 
+	left: 5%;
+	width: 90%; 
+	height: 8%;
+} 
+	
+.header-left { 
+	display: flex; 
+	align-items: center; 
+} 
+
+.header-left img {
+	margin-right: 10px; 
+} 
+
+.header-right {
+	margin-left: auto;
+}
+
+
+
+.section { 
+	margin-bottom: 20px;
+	width:90%
+} 
+.section-title { 
+	font-weight: bold; 
+	margin-bottom: 5px; 
+} 
+.section-description { 
+	margin-bottom: 10px; 
+} 
+.manage-button, .save-button { 
+	background-color: #28a745; 
+	color: white; 
+	border: none; 
+	padding: 10px 20px; 
+	cursor: pointer; 
+	border-radius: 5px; 
+} 
+.save-button { 
+	display: block; 
+	margin-top: 20px; 
+}
+.Settings-Group {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+
+
+/*Spoofing switch CSS https://www.geeksforgeeks.org/how-to-create-toggle-switch-by-using-html-and-css/*/
+
+/* Container for the toggle */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+	margin-right:25px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+
+/* The circular slider */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Toggled state */
+.toggle-switch input:checked+.slider {
+    background-color: #4caf50;
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(24px);
+}
+
+.topSettingsBtn {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  font:0px;
+}
+
+/*Sets the size of the settings button to 50px*/
+.settingsImage{
+	width:50px;
+}
+
+.header_separator{
+	position:fixed;
+	top:8%;
+	left:0%;
+	width: 95%;
+}
+
+
+
+.GraphSettingsButton{
+	padding:10%;
+	border:transparent;
+	background-color:transparent;
+}
