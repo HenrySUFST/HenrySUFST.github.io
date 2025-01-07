@@ -393,9 +393,13 @@ input[type="radio"] {
 .section-title { 
 	font-weight: bold; 
 	margin-bottom: 5px; 
+	font-size: 150%;
+	color: #333;
 } 
 .section-description { 
 	margin-bottom: 10px; 
+	font-size: 120%;
+	color: #333;
 } 
 .manage-button, .save-button { 
 	background-color: #28a745; 
